@@ -1,0 +1,16 @@
+language: node_js
+os: osx
+addons:
+  artifacts:
+    target_paths: dmgfiles/*
+    debug: true
+jobs:  
+  include:
+    - stage: "Install"
+      name: "Install nodejs"
+      script: 
+        - npm install --global create-dmg
+    - stage: "Sign DMG"
+      name: "create dmg"
+      script:
+        - create-dmg 'Katalon.Studio.app' dmgfiles/
