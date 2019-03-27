@@ -7,7 +7,7 @@ addons:
 jobs:  
   include:
     - stage: "CreateDMG"
-      name: "Creating DMG"
+      name: "Creating"
       script: 
         - npm install --global create-dmg
-        - create-dmg 'Katalon.Studio.app' dmgfiles/Katalon.Studio.dmg
+        - create-dmg 'KatalonStudio.app' dmgfiles/Katalon.Studio.dmg
