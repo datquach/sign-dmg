@@ -6,11 +6,8 @@ addons:
     debug: true
 jobs:  
   include:
-    - stage: "Install"
-      name: "Install nodejs"
+    - stage: "CreateDMG"
+      name: "Creating DMG"
       script: 
         - npm install --global create-dmg
-    - stage: "Sign DMG"
-      name: "create dmg"
-      script:
         - create-dmg 'Katalon.Studio.app' dmgfiles/Katalon.Studio.dmg
