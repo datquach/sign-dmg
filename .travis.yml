@@ -13,4 +13,4 @@ jobs:
     - stage: "Sign DMG"
       name: "create dmg"
       script:
-        - create-dmg 'Katalon.Studio.app' dmgfiles/
+        - create-dmg 'Katalon.Studio.app' dmgfiles/Katalon.Studio.dmg
