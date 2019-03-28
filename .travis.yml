@@ -8,6 +8,7 @@ jobs:
   include:
     - stage: "CreateDMG"
       name: "Creating"
-      script: 
+      script:
+        - nvm install stable
         - npm install --global create-dmg
         - create-dmg 'KatalonStudio.app' dmgfiles/
