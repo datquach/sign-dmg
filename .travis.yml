@@ -11,4 +11,4 @@ jobs:
       script:
         - nvm install stable
         - npm install --global create-dmg
-        - create-dmg 'KatalonStudio.app' dmgfiles/
+        - create-dmg "KatalonStudio.app" dmgfiles/
