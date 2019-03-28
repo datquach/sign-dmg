@@ -10,4 +10,4 @@ jobs:
       name: "Creating"
       script: 
         - npm install --global create-dmg
-        - create-dmg 'KatalonStudio.app' dmgfiles/Katalon.Studio.dmg
+        - create-dmg 'KatalonStudio.app' dmgfiles/
