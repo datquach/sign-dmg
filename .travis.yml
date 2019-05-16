@@ -10,7 +10,7 @@ addons:
 jobs:  
   include:
     - stage: "Importcertificate"
-      name" ImportCertificate"
+      name: "Importcertificate"
       script:
         - security import KatalonCodeSignDeveloperCert.p12 -k ~/Library/Keychains/login.keychain-db -P katalon@123
         - security find-identity -v
