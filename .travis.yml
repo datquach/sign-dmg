@@ -11,5 +11,8 @@ jobs:
       script:
         - security import KatalonCodeSignDeveloperCert.p12 -k ~/Library/Keychains/login.keychain-db -P katalon@123
         - security find-identity -v
-        - npm install create-dmg
+        - mkdir ~/.npm-global
+        - npm config set prefix '~/.npm-global'
+        - export PATH=~/.npm-global/bin:$PATH
+        - npm install -g create-dmg
         - create-dmg KatalonStudio.app
