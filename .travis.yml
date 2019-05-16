@@ -2,7 +2,7 @@ language: node_js
 os: osx
 addons:
   artifacts:
-    target_paths: dmgfiles/*
+    target_paths: Build/Release/*
     debug: true
 jobs:  
   include:
@@ -15,4 +15,5 @@ jobs:
         - npm config set prefix '~/.npm-global'
         - export PATH=~/.npm-global/bin:$PATH
         - npm install -g create-dmg
-        - create-dmg KatalonStudio.app
+        - mkdir -p Build/Releases
+        - create-dmg KatalonStudio.app Build/Releases
