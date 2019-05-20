@@ -15,6 +15,6 @@ jobs:
         - npm config set prefix '~/.npm-global'
         - export PATH=~/.npm-global/bin:$PATH
         - npm install -g create-dmg
-        - mkdir -p Build/Releases
+        - mkdir -p Build
         - sudo codesign --verbose --force --deep --sign "80166EC5AD274586C44BD6EE7A59F016E1AB00E4" --timestamp=none "KatalonStudio.app"
         - create-dmg KatalonStudio.app Build/
