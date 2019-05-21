@@ -16,4 +16,4 @@ jobs:
         - export PATH=~/.npm-global/bin:$PATH
         - npm install -g create-dmg
         - mkdir -p Build
-        - create-dmg KatalonStudio.app Build/
+        - create-dmg KatalonStudio.app
